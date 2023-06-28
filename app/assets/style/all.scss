@@ -2,5 +2,9 @@
 @import "./helpers/variables";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
+@import './helpers/base';
+@import './helpers/css-reset';
+@import './helpers/mixin';
+@import './pages/layout';
+@import './pages/index'
 
-@import './layout/index.scss'

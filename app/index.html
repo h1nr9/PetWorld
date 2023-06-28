@@ -1,58 +1,106 @@
 ---
-title: Boostrap Index
+title: 寵物天地 PetWorld | 首頁
 layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
 
-<div class="container">
-  <h1 class="index__h1">這是一段話</h1>
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
-  </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
+<div class="section-banner">
+  <div
+    class="container d-flex flex-column justify-content-center align-items-center"
+  >
+    <p class="fs-8 text-white">為您的毛絨朋友帶來微笑</p>
+    <h1 class="fs-10 text-white mt-5 fw-bolder">寵愛，從食物開始</h1>
+    <div>
+      <a href="" class="btn btn-primary mt-5 text-white fs-5">立即購買</a>
+    </div>
   </div>
 </div>
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
+<div class="section-service bg-ivory">
+  <div class="container text-center">
+    <h2 class="fs-9 fw-bold mb-8">為您的寵物，提供最好的</h2>
+    <ul class="row d-flex justify-content-center service-items">
+      <li class="col-lg-4 me-2">
+        <img src="./assets/images/home-section2-1.png" alt="" />
+        <h3 class="fs-6 fw-bolder mt-6 mb-2">貼心價格</h3>
+        <p class="lh-base">
+          我們相信價格合理是與顧客建立長期關係的基礎，我們堅守這個原則，確保每個寵物主人都能負擔得起高品質的寵物食品和用品。
+        </p>
+      </li>
+      <li class="col-lg-4 me-2">
+        <img src="./assets/images/home-section2-2.png" alt="" />
+        <h3 class="fs-6 fw-bolder mt-6 mb-2">快速送達</h3>
+        <p class="lh-base">
+          我們採用快速且可靠的送達服務，讓您能夠在最短的時間內收到您的訂單，享受高效便捷的購物體驗。
+        </p>
+      </li>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+      <li class="col-lg-4 me-2">
+        <img src="./assets/images/home-section2-3.png" alt="" />
+        <h3 class="fs-6 fw-bolder mt-6 mb-2">安心售後服務</h3>
+        <p class="lh-base">
+          我們的售後團隊具有豐富的產品知識和專業技能，他們將竭盡全力為您提供最好的售後支持，確保您對於我們的產品感到滿意。
+        </p>
+      </li>
+      <li class="col-lg-4">
+        <img src="./assets/images/home-sectioin2-4.png" alt="" />
+        <h3 class="fs-6 fw-bolder mt-6 mb-2">公開透明</h3>
+        <p class="lh-base">
+          我們提出六大承諾：
+          產品三大堅持、公開營養成分、公開產品履歷、公開進貨證明、公開檢驗報告、產品責任險。
+        </p>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="section-mustBuy bg-secondary">
+  <div class="container text-center">
+    <h2 class="fs-9 fw-bold mb-9">毛孩熱銷必買</h2>
+    <div>
+      <ul
+        class="d-flex justify-content-center align-items-center ps-10 pe-10 mustBut-items"
+      >
+        <li class="me-6">
+          <a href=""
+            ><img src="./assets/images/petfood.jpg" class="img-fluid" />
+            <p class="mt-2 fs-8 fw-bold pt-2 pb-2">寵物主食</p></a
+          >
+        </li>
+        <li class="me-6">
+          <a href=""
+            ><img src="./assets/images/pettoy.jpg" class="img-fluid" />
+            <p class="mt-2 fs-8 fw-bold pt-2 pb-2">寵物用品</p></a
+          >
+        </li>
+        <li>
+          <a href="" class="fs-8"
+            ><img src="./assets/images/pet_health.jpeg" class="img-fluid" />
+            <p class="mt-2 fs-8 fw-bold pt-2 pb-2">寵物副食&零食</p></a
+          >
+        </li>
+      </ul>
     </div>
+  </div>
+</div>
+
+<div class="section-category">
+  <div class="container text-center">
+    <h2 class="fs-9 fw-bold mb-9">貓狗天地</h2>
+    <ul class="d-flex ps-10 pe-10">
+      <li>
+        <a href="" class=""
+          ><img src="./assets/images/dog.jpg" class="img-fluid" />
+          <p class="text-dark fs-8 pt-2 pb-2 fw-bold bg-white">狗狗專區</p></a
+        >
+      </li>
+      <li>
+        <a href="" class=""
+          ><img src="./assets/images/cat.jpg" class="img-fluid" />
+          <p class="text-dark fs-8 pt-2 pb-2 fw-bold bg-white">貓貓專區</p></a
+        >
+      </li>
+    </ul>
   </div>
 </div>
