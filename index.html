@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
     <link rel="stylesheet" href="./assets/style/all.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body>
@@ -55,6 +56,8 @@
 <div class="section-banner">
   <div
     class="container d-flex flex-column justify-content-center align-items-center"
+    data-aos="fade-up"
+    data-aos-duration="1000"
   >
     <p class="fs-8 text-white">為您的毛絨朋友帶來微笑</p>
     <h1 class="fs-10 text-white mt-5 fw-bolder">寵愛，從食物開始</h1>
@@ -68,14 +71,14 @@
   <div class="container text-center">
     <h2 class="fs-9 fw-bold mb-8">為您的寵物，提供最好的</h2>
     <ul class="row d-flex justify-content-center service-items">
-      <li class="col-lg-4 me-2">
+      <li class="col-lg-3" data-aos="flip-up">
         <img src="./assets/images/home-section2-1.png" alt="" />
         <h3 class="fs-6 fw-bolder mt-6 mb-2">貼心價格</h3>
         <p class="lh-base">
           我們相信價格合理是與顧客建立長期關係的基礎，我們堅守這個原則，確保每個寵物主人都能負擔得起高品質的寵物食品和用品。
         </p>
       </li>
-      <li class="col-lg-4 me-2">
+      <li class="col-lg-3" data-aos="flip-up" data-aos-delay="100">
         <img src="./assets/images/home-section2-2.png" alt="" />
         <h3 class="fs-6 fw-bolder mt-6 mb-2">快速送達</h3>
         <p class="lh-base">
@@ -83,14 +86,14 @@
         </p>
       </li>
 
-      <li class="col-lg-4 me-2">
+      <li class="col-lg-3" data-aos="flip-up" data-aos-delay="300">
         <img src="./assets/images/home-section2-3.png" alt="" />
         <h3 class="fs-6 fw-bolder mt-6 mb-2">安心售後服務</h3>
         <p class="lh-base">
           我們的售後團隊具有豐富的產品知識和專業技能，他們將竭盡全力為您提供最好的售後支持，確保您對於我們的產品感到滿意。
         </p>
       </li>
-      <li class="col-lg-4">
+      <li class="col-lg-3" data-aos="flip-up" data-aos-delay="500">
         <img src="./assets/images/home-sectioin2-4.png" alt="" />
         <h3 class="fs-6 fw-bolder mt-6 mb-2">公開透明</h3>
         <p class="lh-base">
@@ -107,23 +110,26 @@
     <h2 class="fs-9 fw-bold mb-9">毛孩熱銷必買</h2>
     <div>
       <ul
-        class="d-flex justify-content-center align-items-center ps-10 pe-10 mustBut-items"
+        class="row d-flex justify-content-center align-items-center ps-10 pe-10 mustBut-items"
       >
-        <li class="me-6">
+        <li class="col-8 col-lg-4" data-aos="zoom-in-right">
           <a href=""
-            ><img src="./assets/images/petfood.jpg" class="img-fluid" />
+            ><img src="./assets/images/petfood.jpg" class="img-fluid rounded" />
             <p class="mt-2 fs-8 fw-bold pt-2 pb-2">寵物主食</p></a
           >
         </li>
-        <li class="me-6">
+        <li class="col-8 col-lg-4 mt-7 mt-lg-0" data-aos="zoom-in-down">
           <a href=""
-            ><img src="./assets/images/pettoy.jpg" class="img-fluid" />
+            ><img src="./assets/images/pettoy.jpg" class="img-fluid rounded" />
             <p class="mt-2 fs-8 fw-bold pt-2 pb-2">寵物用品</p></a
           >
         </li>
-        <li>
+        <li class="col-8 col-lg-4 mt-7 mt-lg-0" data-aos="zoom-in-left">
           <a href="" class="fs-8"
-            ><img src="./assets/images/pet_health.jpeg" class="img-fluid" />
+            ><img
+              src="./assets/images/pet_health.jpeg"
+              class="img-fluid rounded"
+            />
             <p class="mt-2 fs-8 fw-bold pt-2 pb-2">寵物副食&零食</p></a
           >
         </li>
@@ -135,15 +141,15 @@
 <div class="section-category">
   <div class="container text-center">
     <h2 class="fs-9 fw-bold mb-9">貓狗天地</h2>
-    <ul class="d-flex ps-10 pe-10">
-      <li>
-        <a href="" class=""
+    <ul class="row d-flex ps-10 pe-10">
+      <li class="col-12 col-lg-6 mb-5 mb-lg-0" data-aos="zoom-out-down">
+        <a href=""
           ><img src="./assets/images/dog.jpg" class="img-fluid" />
           <p class="text-dark fs-8 pt-2 pb-2 fw-bold bg-white">狗狗專區</p></a
         >
       </li>
-      <li>
-        <a href="" class=""
+      <li class="col-12 col-lg-6" data-aos="zoom-out-down">
+        <a href=""
           ><img src="./assets/images/cat.jpg" class="img-fluid" />
           <p class="text-dark fs-8 pt-2 pb-2 fw-bold bg-white">貓貓專區</p></a
         >
@@ -152,11 +158,80 @@
   </div>
 </div>
 
+<div class="section-recommend">
+  <div class="container">
+    <h2 class="fs-9 fw-bold mb-9 text-center">顧客推薦</h2>
+    <ul class="row justify-content-sm-center align-items-sm-center">
+      <li
+        class="col-6 col-lg-3 mb-7 mb-lg-0"
+        data-aos="flip-left"
+        data-aos-duration="1000"
+      >
+        <img src="./assets/images/recommend-1.png" class="img-fluid rounded" />
+        <div class="p-4 rounded shadow">
+          <h4 class="mb-2 fw-bold">Jessie</h4>
+          <p class="mb-9 lh-base">
+            價格合理，商品品質也很好。尤其是貓砂，吸收力超強，不易散落，真的很方便。
+          </p>
+          <span class="fs-3 text-gray">2021/06/20</span>
+        </div>
+      </li>
+      <li
+        class="col-6 col-lg-3 mb-7 mb-lg-0"
+        data-aos="flip-left"
+        data-aos-duration="1000"
+        data-aos-delay="100"
+      >
+        <img src="./assets/images/recommend-2.png" class="img-fluid rounded" />
+        <div class="p-4 rounded shadow">
+          <h4 class="mb-2 fw-bold">凱倫</h4>
+          <p class="mb-9 lh-base">
+            我在你的網站上買了一個寵物餐具套裝，品質優良，設計時尚，還非常耐用。
+          </p>
+          <span class="fs-3 text-gray">2021/04/01</span>
+        </div>
+      </li>
+      <li
+        class="col-6 col-lg-3"
+        data-aos="flip-left"
+        data-aos-duration="1000"
+        data-aos-delay="300"
+      >
+        <img src="./assets/images/recommend-3.png" class="img-fluid rounded" />
+        <div class="p-4 rounded shadow">
+          <h4 class="mb-2 fw-bold">悠悠</h4>
+          <p class="mb-9 lh-base">
+            快速送達讓我感到很方便。我對你們的商品和服務都非常滿意，謝謝你們！
+          </p>
+          <span class="fs-3 text-gray">2021/12/25</span>
+        </div>
+      </li>
+      <li
+        class="col-6 col-lg-3"
+        data-aos="flip-left"
+        data-aos-duration="1000"
+        data-aos-delay="500"
+      >
+        <img src="./assets/images/recommend-4.png" class="img-fluid rounded" />
+        <div class="p-4 rounded shadow">
+          <h4 class="mb-2 fw-bold">Chen</h4>
+          <p class="mb-9 lh-base">
+            我在你的網站上買了一個貓抓板和一些貓玩具，我的貓咪非常愛它們！質量很好。
+          </p>
+          <span class="fs-3 text-gray">2021/08/17</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
 
     <footer class="bg-primary pt-10 pb-8">
       <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <ul class="d-flex">
+        <div
+          class="d-flex justify-content-center justify-content-lg-between align-items-center"
+        >
+          <ul class="d-none d-lg-flex">
             <li><a href="" class="text-white me-8">首頁</a></li>
             <li><a href="" class="text-white me-8">狗狗專區</a></li>
             <li><a href="" class="text-white me-8">貓貓專區</a></li>
@@ -164,7 +239,7 @@
             <li><a href="" class="text-white">常見問題</a></li>
           </ul>
 
-          <ul class="d-flex">
+          <ul class="d-flex justify-content-center align-items-center">
             <li>
               <a href="#" class="me-8">
                 <img
@@ -197,20 +272,28 @@
         <div
           class="mt-9 d-flex flex-column footer-icon font-roboto fs-8 border-bottom pb-8"
         >
-          <a href="Tel:0800-000-000">
+          <a
+            href="Tel:0800-000-000"
+            class="d-flex justify-content-center align-items-center justify-content-lg-start fs-4 footer-info"
+          >
             <span class="material-symbols-outlined me-5"> call </span
             >0800-000-000
           </a>
-          <a href="mailto:petworld@gamil.com">
-            <span class="material-symbols-outlined mt-7 me-5"> mail </span
+          <a
+            href="mailto:petworld@gamil.com"
+            class="mt-7 d-flex justify-content-center align-items-center justify-content-lg-start fs-4 footer-info"
+          >
+            <span class="material-symbols-outlined me-5"> mail </span
             >petworld@gamil.com
           </a>
         </div>
-        <div class="d-flex justify-content-between align-items-center mt-8">
+        <div
+          class="d-flex justify-content-center align-items-center justify-content-lg-between align-items-lg-center mt-8"
+        >
           <p class="text-white fs-4">
             Copyright © 2020 Glasses.All rights reserved.
           </p>
-          <ul class="d-flex text-white fs-3">
+          <ul class="d-none d-lg-flex text-white fs-3">
             <li>
               <a href="" class="me-9">隱私權政策</a>
             </li>
@@ -225,4 +308,8 @@
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
