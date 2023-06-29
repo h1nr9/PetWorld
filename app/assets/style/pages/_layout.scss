@@ -17,10 +17,6 @@ footer{
     font-size: 36px; 
     }
     @include media-breakpoint-up(lg) {
-        // .social-icon{
-        //     height: 48px;
-        //     width: 48px;    
-        // }
         .footer-info{
             font-size: 32px !important;
         }
