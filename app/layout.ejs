@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
     <link rel="stylesheet" href="./assets/style/all.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body>
@@ -55,8 +56,10 @@
 
     <footer class="bg-primary pt-10 pb-8">
       <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <ul class="d-flex">
+        <div
+          class="d-flex justify-content-center justify-content-lg-between align-items-center"
+        >
+          <ul class="d-none d-lg-flex">
             <li><a href="" class="text-white me-8">首頁</a></li>
             <li><a href="" class="text-white me-8">狗狗專區</a></li>
             <li><a href="" class="text-white me-8">貓貓專區</a></li>
@@ -64,7 +67,7 @@
             <li><a href="" class="text-white">常見問題</a></li>
           </ul>
 
-          <ul class="d-flex">
+          <ul class="d-flex justify-content-center align-items-center">
             <li>
               <a href="#" class="me-8">
                 <img
@@ -97,20 +100,28 @@
         <div
           class="mt-9 d-flex flex-column footer-icon font-roboto fs-8 border-bottom pb-8"
         >
-          <a href="Tel:0800-000-000">
+          <a
+            href="Tel:0800-000-000"
+            class="d-flex justify-content-center align-items-center justify-content-lg-start fs-4 footer-info"
+          >
             <span class="material-symbols-outlined me-5"> call </span
             >0800-000-000
           </a>
-          <a href="mailto:petworld@gamil.com">
-            <span class="material-symbols-outlined mt-7 me-5"> mail </span
+          <a
+            href="mailto:petworld@gamil.com"
+            class="mt-7 d-flex justify-content-center align-items-center justify-content-lg-start fs-4 footer-info"
+          >
+            <span class="material-symbols-outlined me-5"> mail </span
             >petworld@gamil.com
           </a>
         </div>
-        <div class="d-flex justify-content-between align-items-center mt-8">
+        <div
+          class="d-flex justify-content-center align-items-center justify-content-lg-between align-items-lg-center mt-8"
+        >
           <p class="text-white fs-4">
             Copyright © 2020 Glasses.All rights reserved.
           </p>
-          <ul class="d-flex text-white fs-3">
+          <ul class="d-none d-lg-flex text-white fs-3">
             <li>
               <a href="" class="me-9">隱私權政策</a>
             </li>
@@ -125,4 +136,8 @@
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>

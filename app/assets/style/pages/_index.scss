@@ -52,3 +52,10 @@
     }
   }
 }
+
+.section-recommend{
+  @include section;
+  p{
+    height: 48px;
+  }
+}
